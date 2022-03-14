@@ -57,6 +57,8 @@ let keyName = 'playedBy';
 character[keyName] = "Maisie Williams";
 // - Using `alert` alert the value stored in key you added above `keyName` use the variable name to access
 alert(character[keyName]);
+// console.log(character[keyName]);
+// console.log(character['keyName']);
 
 // - Using the function `console.log` log the value of the key `42`. You don't have to add the key
 console.log(character[42]);
@@ -64,4 +66,13 @@ console.log(character[42]);
 // - Add a new key named `totalSeasons` with the value of `1 + 2 + 3 + 2`. Use this expression
 character.totalSeasons = 1 + 2 + 3 + 2;
 // - Access the value of the key `totalSeason` (it should be 8)
-console.log(character.totalSeasons);
+// console.log(character.totalSeasons);
+// console.log('character.totalSeasons');
+let keyValue = 'username';
+let charactor = {
+  username: 'arya',
+};
+// 1.
+console.log(charactor['keyValue']);
+// 2.
+console.log(charactor[keyValue]);
