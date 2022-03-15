@@ -1,5 +1,5 @@
 // 1. Create an array named numbers and store 5 number values in it
-let numbers = [11,12,13,14,15];
+let numbers = [1,12,13,14,55];
 console.log(numbers.length);
 // 2. Calculate the sum of array items and print it to the console using console.log()
  let sum = 0;
@@ -12,8 +12,23 @@ console.log(numbers.length);
 // 3. Calculate the average of array items and print it to the console using console.log()
 console.log(average);
 // 4. Find the highest number in the array and print it to the console using console.log()
-// 5. Find the lowest number in the array and print it to the console using console.log()
+let highestNumber = numbers[0];
 
+for(let number of numbers) {
+    if(number > highestNumber) {
+        highestNumber = number;
+    }
+}
+console.log(highestNumber);
+// 5. Find the lowest number in the array and print it to the console using console.log()
+let lowestNumber = numbers[0];
+
+for(let number of numbers) {
+    if(number < lowestNumber) {
+        lowestNumber = number;
+    }
+}
+console.log(lowestNumber);
 // 6. Find the even numbers in the array and print them to the console using console.log()
 let even = [],
     odd =[];
@@ -35,7 +50,7 @@ let divisibleByFive  = [];
             divisibleByFive.push(number);
         } 
     }
-console.log(divisibleByFive);
+console.log(`${divisibleByFive} is divisible by 5` );
 // 9. Log all the element of the array one by one
 for(let i = 0; i < numbers.length; i++){
     console.log(`${i} : ${numbers[i]}`);
