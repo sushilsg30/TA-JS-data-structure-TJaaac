@@ -18,11 +18,14 @@ Hint: (Structure of got variable)
   - And, each person is an object with "name" and "description" properties
 */
 
-// 1. Log the value of key "houses"
+// 1. Log the value of key "houses" 
+console.log(got.houses.length);
 
 // 2. Log the length of the "houses" key
+console.log(got.houses.length - 1);
 
 // 3. Log the name of all houses in got one by one
+
 
 // 4. Log the name of all the people in house Starks (index 0) one by one
 
